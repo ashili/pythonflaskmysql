@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/listings/new" method="POST">
+    <div class="row">
+        <div class="col">
+            <label for="id">ID</label>
+            <input id="id" type="text" class="form-control" placeholder="listing Index" name="num">
+        </div>
+        <div class="col">
+            <label for="Zip">Zip Code</label>
+            <input id="Zip" type="text" class="form-control" placeholder="Zip Code" name="Zip">
+        </div>
+        <div class="col">
+            <label for="Baths">Baths</label>
+            <input id="Baths" type="text" class="form-control" placeholder="Baths" name="Baths">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label for="LivingSpace">Living Space </label>
+            <input id="LivingSpace" type="text" class="form-control" placeholder="LivingSpace" name="LivingSpace">
+        </div>
+        <div class="col">
+            <label for="Beds">Beds</label>
+            <input id="Beds" type="text" class="form-control" placeholder="Beds" name="Beds">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="YearBuilt">Year Built</label>
+            <input id="YearBuilt" type="text" class="form-control" placeholder="Year Built" name="YearBuilt">
+        </div>
+        <div class="col">
+            <label for="ListPrice">Listing Price</label>
+            <input id="ListPrice" type="text" class="form-control" placeholder="ListPrice" name="ListPrice">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Create</button>
+
+</form>
+
+{% endblock %}

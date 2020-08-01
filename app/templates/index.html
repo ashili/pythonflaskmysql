@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Zip</th>
+        <th scope="col">Baths</th>
+        <th scope="col">Living Space</th>
+        <th scope="col">Beds</th>
+        <th scope="col">Year Built</th>
+        <th scope="col">Listing Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for listing in listings %}
+    <tr>
+        <td><a href="/view/{{listing.id}}">{{ listing.num }}</a></td>
+        <td>{{ listing.LivingSpace }}</td>
+        <td>{{ listing.Beds }}</td>
+        <td>{{ listing.Baths }}</td>
+        <td>{{ listing.Zip }}</td>
+        <td>{{ listing.YearBuilt }}</td>
+        <td>{{ listing.ListPrice }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

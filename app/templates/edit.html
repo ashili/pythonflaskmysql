@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/edit/{{ listing.id }}" method="post">
+    <div class="row">
+        <div class="col">
+            <label for="id">ID</label>
+            <input id="id" type="text" class="form-control" placeholder="ID" name="id" value="{{listing.num}}">
+        </div>
+        <div class="col">
+            <label for="Zip">Zip</label>
+            <input id="Zip" type="text" class="form-control" placeholder="Zip" name="Zip" value="{{listing.Zip}}">
+        </div>
+        <div class="col">
+            <label for="Baths">Baths</label>
+            <input id="Baths" type="text" class="form-control" placeholder="Baths" name="Baths" value="{{listing.Baths}}">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label for="LivingSpace">Living Space</label>
+            <input id="LivingSpace" type="text" class="form-control" placeholder="LivingSpace" name="LivingSpace" value="{{listing.LivingSpace}}">
+        </div>
+        <div class="col">
+            <label for="Beds">Beds</label>
+            <input id="Beds" type="text" class="form-control" placeholder="Beds" name="Beds" value="{{listing.Beds}}">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="YearBuilt">YearBuilt</label>
+            <input id="YearBuilt" type="text" class="form-control" placeholder="YearBuilt" name="YearBuilt" value="{{listing.YearBuilt}}">
+        </div>
+        <div class="col">
+            <label for="ListPrice">Listing Price</label>
+            <input id="ListPrice" type="text" class="form-control" placeholder="ListingPrice" name="ListPrice" value="{{listing.ListPrice}}">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+
+</form>
+{% endblock %}
