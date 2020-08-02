@@ -3,26 +3,23 @@
 
 ## Screenshots:
 
-### data tables in pycharm
+### data tables in postman
 
-![pycharm data query](screenshots/pycharmData.png)
+![pycharm data query](screenshots/postmanAllListings.png)
 
-### browser displaying your homepage with your data
+### one Record in Postman
 
-![postman data](screenshots/HomepageData.png)
+![postman data](screenshots/postmanOneRecord.png)
 
-### one record
+### Added record postman
 
-![pycharm data query](screenshots/oneRecord.png)
+![pycharm data query](screenshots/postmanAddedRecord.png)
 
-### new record added 209
+### nDeleted Record Postman
 
-![postman data](screenshots/209creation.png)
+![postman data](screenshots/postmanDeletedRecord.png)
+![postman data](screenshots/postmanDeletedRecord2.png)
 
 
-![postman data](screenshots/addedRecord209.png)
 
-### deleted record 3
-
-![pycharm data query](screenshots/record3Deleted.png)
 
